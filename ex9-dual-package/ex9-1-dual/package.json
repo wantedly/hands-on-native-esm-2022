@@ -1,0 +1,7 @@
+{
+  "name": "esm-test",
+  "exports": {
+    "import": "./lib.mjs",
+    "require": "./lib.cjs"
+  }
+}
