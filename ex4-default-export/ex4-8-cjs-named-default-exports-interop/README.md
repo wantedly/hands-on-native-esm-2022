@@ -1,7 +1,7 @@
 ## Command
 
 ```
-node app.cjs
+node app.mjs
 ```
 
 ## Output
