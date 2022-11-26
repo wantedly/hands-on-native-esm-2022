@@ -1,7 +1,7 @@
 ## Command
 
 ```
-node sleep3.cjs
+node sleep-app.cjs
 ```
 
 ## Output

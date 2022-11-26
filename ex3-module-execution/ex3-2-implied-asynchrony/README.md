@@ -1,7 +1,7 @@
 ## Command
 
 ```
-node sleep2.mjs
+node sleep-app.mjs
 ```
 
 ## Output

@@ -1,14 +1,14 @@
 ## Command
 
 ```
-node sleep2.cjs
+node sleep-app.cjs
 ```
 
 ## Output
 
 ```
-<dir>/sleep2.cjs:1
-const { value } = await import("./sleep.mjs");
+<dir>/sleep-app.cjs:1
+const { value } = await import("./sleep-lib.mjs");
                   ^^^^^
 
 SyntaxError: await is only valid in async functions and the top level bodies of modules

@@ -10,7 +10,7 @@ console.log("slept 3s");
 ```
 
 ```javascript
-// sleep.mjs
+// sleep-lib.mjs
 import { setTimeout } from "node:timers/promises";
 
 await setTimeout(3000);
@@ -19,43 +19,43 @@ export const value = 42;
 ```
 
 ```javascript
-// sleep2.mjs
-import { value } from "./sleep.mjs";
+// sleep-app.mjs
+import { value } from "./sleep-lib.mjs";
 
 console.log("value =", value);
 ```
 
 ```javascript
-// sleep2.mjs
-const { value } = await import("./sleep.mjs");
+// sleep-app.mjs
+const { value } = await import("./sleep-lib.mjs");
 
 console.log("value =", value);
 ```
 
 ```javascript
-// sleep2.cjs
-const { value } = require("./sleep.mjs");
+// sleep-app.cjs
+const { value } = require("./sleep-lib.mjs");
 
 console.log("value =", value);
 ```
 
 ```javascript
-// sleep2.cjs
-const { value } = await import("./sleep.mjs");
+// sleep-app.cjs
+const { value } = await import("./sleep-lib.mjs");
 
 console.log("value =", value);
 ```
 
 ```javascript
-// sleep2.cjs
-import("./sleep.mjs").then(({ value }) => {
+// sleep-app.cjs
+import("./sleep-lib.mjs").then(({ value }) => {
   console.log("value =", value);
 });
 ```
 
 ```javascript
-// sleep2.cjs
-import("./sleep.mjs").then(({ value }) => {
+// sleep-app.cjs
+import("./sleep-lib.mjs").then(({ value }) => {
   exports.value2 = value * 2;
 });
 ```

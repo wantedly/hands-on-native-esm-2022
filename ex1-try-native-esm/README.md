@@ -1,15 +1,15 @@
 ## Let's try ESM!
 
 ```javascript
-// a.mjs
+// lib.mjs
 export default function(x) {
   return x * x;
 }
 ```
 
 ```javascript
-// b.mjs
-import square from "./a.mjs";
+// app.mjs
+import square from "./lib.mjs";
 
 console.log(square(2));
 ```
